@@ -1,0 +1,28 @@
+# Node modules should be installed inside the image
+node_modules/
+
+# Build outputs
+apps/api/dist/
+apps/web/.next/
+apps/web/out/
+
+# Tests and coverage
+coverage/
+apps/api/coverage/
+
+# Local env files (we pass env via compose)
+**/.env
+**/.env.local
+**/.env.development.local
+**/.env.test.local
+**/.env.production.local
+
+# VCS, editors, OS
+.git/
+.gitignore
+.DS_Store
+.vscode/
+.idea/
+
+# PNPM store (let Docker manage in image)
+.pnpm-store/
